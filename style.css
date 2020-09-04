@@ -1,14 +1,46 @@
 h1 {
-  color: chartreuse;
-margin-left: 50% ;
+    color: white;
+    margin-left: 40px;
+    
 }
+.item{
+    position: relative;
+
+}
+.item p{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+transform:translate(-50%,-50%);
+opacity: 0;
+}
+.item:hover p{opacity: 1;}
+.item :hover img{opacity: 0.3;}
+a:link{
+    color: lime;
+}
+a:visited{
+    color: navy;
+}
+.menu{
+    margin-right: 10px;
+    padding-top: 20px;
+
+}
+.menu a{
+    margin-left:20px }
 
 /* * {
     border: solid;
 } */
-.header{
-    border: solid;
+.header
+*{
+    border: solid;  
+    border-color: red;
+    
 }
+
+
 .header{
     background-color: cadetblue;
     display: flex;
@@ -16,7 +48,6 @@ margin-left: 50% ;
 }
 
 .site-description{
-    
     display: flex;
     flex-direction: column;
     justify-content: first baseline;
